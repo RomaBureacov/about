@@ -1,0 +1,24 @@
+body {
+    background-color: #001a00
+}
+
+.main {
+    display: inline flex;
+    width: 100%;
+}
+
+.content {
+    flex: 1;
+    padding: 50px 5% 50px;
+    background-color: #282800;
+
+    border: solid medium gold;
+    border-radius: 20px;
+
+    color: gold;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: magenta;
+}
