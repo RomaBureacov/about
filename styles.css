@@ -1,21 +1,55 @@
+:root {
+    --gold-foreground: #ffcc00;
+    --gold-foreground-etched: #806400;
+    --gold-background-dark: #261F00;
+    --gold-background-light: #FFFCF2;
+    --gold-background-accent: #FFF2BF;
+
+    --hacker-background: #001a00;
+    --hacker-foreground: #00ff00;
+}
+
 body {
-    background-color: #001a00
+    background-color: var(--gold-background-dark);
 }
 
 .main {
-    display: inline flex;
+    display: flex;
     width: 100%;
 }
 
-.content {
-    flex: 1;
-    padding: 50px 5% 50px;
-    background-color: #282800;
+.layout {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 5%;
+}
 
-    border: solid medium gold;
+.content {
+
+    width: 100%;
+    box-sizing: border-box;
+
+    margin-bottom: 5%;
+    padding: 5% 10%;
+
+    border: 10px inset var(--gold-foreground);
     border-radius: 20px;
 
-    color: gold;
+    color: var(--gold-foreground-etched);
+    text-shadow: var(--gold-foreground) -1px -1px 2px;
+
+    box-shadow: var(--gold-foreground) 10px 10px 25px;
+
+    background: linear-gradient(
+            -45deg,
+            var(--gold-background-light) 0%,
+            var(--gold-background-accent) 100%
+    );
+}
+
+.subcontent {
+
 }
 
 .sidebar {
