@@ -7,10 +7,25 @@
 
     --hacker-background: #001a00;
     --hacker-foreground: #00ff00;
+    --debug: magenta;
 }
 
 body {
     background-color: var(--gold-background-dark);
+}
+
+h1 {
+    /* TODO: how do I want these to look? */
+    scroll-margin-top: 25vh;
+}
+
+a {
+    /* TODO: how do I want these to look? */
+}
+
+h1 > a {
+    /* TODO: how do I want these to look? */
+    color: var(--gold-foreground-etched);
 }
 
 .main {
@@ -19,27 +34,29 @@ body {
 }
 
 .layout {
+    flex-grow: 1;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     padding: 50px 5%;
 }
 
-.content {
-
-    width: 100%;
-    box-sizing: border-box;
+.vertical-banner {
 
     margin-bottom: 5%;
-    padding: 5% 10%;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding: 2% 2%;
 
-    border: 10px inset var(--gold-foreground);
-    border-radius: 20px;
+    border-style: ridge ridge solid ridge ;
+    border-color: var(--gold-foreground);
+    border-width: 10px;
+    border-radius: 2px 2px 50px 50px;
 
     color: var(--gold-foreground-etched);
     text-shadow: var(--gold-foreground) -1px -1px 2px;
 
-    box-shadow: var(--gold-foreground) 10px 10px 25px;
+    box-shadow: var(--gold-background-dark) 10px 10px 25px;
 
     background: linear-gradient(
             -45deg,
@@ -48,11 +65,39 @@ body {
     );
 }
 
+.content {
+
+    box-sizing: border-box;
+
+    box-shadow: var(--gold-foreground) 10px 10px 25px;
+
+}
+
 .subcontent {
 
 }
 
 .sidebar {
-    width: 200px;
-    background-color: magenta;
+    width: 15%;
+    max-width: 15%;
+    min-width: 15%;
+    /*background-color: var(--debug);*/
+}
+
+.title {
+    font-size: 5rem;
+    text-align: center;
+    font-family: "Zapfino Forte LT Pro", serif;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "Zapfino";
+    src:
+        local("Zapfino"),
+        url("src/font/ZapfinoExtraLT-One.otf");
+        url("lib/font/ZapfinoExtraLT-Two.otf");
+        url("lib/font/ZapfinoExtraLTPro.otf");
+        url("lib/font/ZapfinoForteLTPro.otf");
 }

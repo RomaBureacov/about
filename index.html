@@ -4,22 +4,264 @@
     <meta charset="UTF-8">
     <title>About Me</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="src/helper.js" defer></script>
 </head>
 <body>
     <div class="main">
-        <div class="main sidebar">
+        <div class="sidebar">
         </div>
             <div class="layout">
-                <div class="content">
-                    <p>Hello! Welcome to my about page! Here you will learn about who I am! Goobeedoobeedoopb</p>
-
+                <div class="content vertical-banner" style="text-align: center">
+                    <p class="title">Roman Bureacov</p>
+                    <p>Roman.Bureacov@gmail.com</p>
+                    <p>Quis est vir ab equuo portatur?</p>
+                    <p>HTML artisanal and hand-crafted</p>
                 </div>
-                <div class="content">
-                    <p>Hello! Welcome to my about page! Here you will learn about who I am! Goobeedoobeedoopb</p>
+                <div class="content vertical-banner">
+                    <p>
+                        Welcome! You're here because you likely because I directed you here! Let me show you around...
+                    </p>
+                    <div class="content vertical-banner" id="TableOfContents" style="float: left">
+                        <!-- TABLE OF CONTENTS -->
+                        <p>Table of Contents</p>
 
+                    </div>
+                    <!-- CONTENT -->
+                    <p>
+                        This page is dedicated as a source for my potential resumes
+                        and cover letters, but also serves as an elaboration of what I might mention in said documents.
+                        That being said, it's intended audience is potential employers, but that should not discourage
+                        you to read if you're curious as well.
+                    </p>
+                    <p>
+                        On the left you'll notice a table of contents.
+                        Use this to navigate if you want just the discrete information rather than reading through
+                        all of it in one sitting.
+                    </p>
+                </div>
+                <div class="content vertical-banner">
+                    <h1>Personality</h1>
+                    <p>
+                        I would argue that I fall between the extrovert and the introvert of the spectrum;
+                        I feel uneasy to be the
+                        one to yell at a crowd, but I would not be opposed to be the one to start a conversation or
+                        to make a planned performance.
+                    </p>
+                    <p>
+                        When I set out for a project, I like to envision what it has. For programming projects, due
+                        to the nature of scope, I like to develop an English-text draft of the vision of the project.
+                        In addition to drafting, I am adamant on documentation. I am of the firm belief that despite
+                        having written code only recently, you cannot trust that one can easily follow it. Code has
+                        a nature of being exact, but simultaneously vague due to abstractions—you cannot trust that
+                        you will ever know it by heart, only the broad ideas and what the documentation tells you.
+                    </p>
+                    <h2>Personal Goals</h2>
+                    <p>
+                        As of right now, my main goal is to pursue a masters in computer science. Out of the time
+                        I've spent as an undergraduate in computer science, I strongly believe my next goal is to
+                        aim to be a graduate student. There is so much to learn in the world of how we make use
+                        of computation ability that it would be a shame to skip past it all.
+                    </p>
+                    <h2>Strengths and Weaknesses</h2>
+                    <p>
+                        I can offer a strength in having a keen eye. Drawing from my experience in Physics
+                        and Chemistry in college, I have developed the want to be more analytical as to what
+                        I am doing.
+                    </p>
+                    <p>
+                        Another strength is that of reading; what I mean is that I <em>want</em> to learn. Spending so
+                        much time at school has shown me that just about all I want to do is be curious and learn
+                        from the world, to observe and study.
+                    </p>
+                    <p>
+                        On the side of weaknesses, I can share that I feel like I hol an odd fear of <em>starting</em> projects.
+                        The difference from this to procrastination is that I don't postpone personal project, I
+                        more-so feel like there is something more I could do before I start or I simply feel like I
+                        lack certain resources. I've observed myself holding the belief that I don't have the time
+                        when part of it is I don't give myself the time.
+                    </p>
+                    <h2>Artificial Intelligence (or Large Language Models)</h2>
+                    <p>
+                        This subsection is dedicated just as a discussion on the use of <em>large language models</em> (LLM)
+                        which are commonly referred to as <em>AI</em>. I mainly wanted to bring this up since I am
+                        oriented towards computer science. I find this technology to definitely be a curious one,
+                        but of course as with anything it has its downsides. I do not entirely condemn the use of
+                        this technology, and I see it only ever grow like a slime mold.
+                    </p>
+                    <p>
+                        My stance is that LLMs are a perfect way to get information fast and easy, it's a great tool for
+                        asking questions that a search engine might not be able to satisfy. But LLMs are just that,
+                        they're useful <em>tools</em>. Part of my independent studies made use of LLMs, as sometimes
+                        there are better solutions to your programming problems that you are not exactly aware of
+                        and wouldn't find easily, however I do not recommend simply copy-pasting such programming solutions.
+                        The entire art of learning how to do something and eventually apply it is through practice.
+                        You can't just ignore textbooks because they're large, bulky, and dense; the entire reason
+                        they exist is to teach you how to be good at something!
+                    </p>
+                    <p>
+                        In short: I use LLMs myself to get information, but I don't use it as a substitute for development.
+                        They're useful tools, part of being a good programmer after all is knowing how to look up a solution
+                        to your particular problem you're stuck on.
+                    </p>
+                </div>
+                <div class="content vertical-banner">
+                    <h1>Academics</h1>
+                    <p>
+                        There are a few things to mention on academic experience. One obvious aspect is that I am in
+                        the program for Bachelors of Science in Computer Science, but I also wanted to dedicate a section
+                        to few other parts of my academic experience that might be of interest.
+                    </p>
+                    <ul>
+                        <li>
+                            <h2>TCSS 421 - Compiler Construction</h2>
+                            <p>University of Washington - Tacoma</p>
+                            <p>Academic Fall Quarter 2025</p>
+                            <p>Textbook: <span style="color:var(--debug)">Textbook</span></p>
+                            <p>
+                                This class was about the process of making a compiler. We used an already mostly
+                                constructed compiler to learn about the details of a compiler. The compiler was
+                                for a language named J-- (J-minus-minus) and was a subset of Java, written in Java,
+                                targeting the Java virtual machine.
+                            </p>
+                            <p>
+                                Here I learned what a grammar was, and that compilation occurs in three distinct
+                                stages: parsing, analyze, codegen; the parser of the compiler makes use of a
+                                scanner, whose job is to read the input, character by character, and recognize
+                                tokens. The parser asks the scanner for tokens and interprets the tokens based
+                                on what it has already seen. After parsing, it analyzes what it has parsed and
+                                performs semantic routines (such as if it's legal to add a boolean to an int).
+                                If the analyze stage succeeds, it performs codegen.
+                            </p>
+                            <p>
+                                For additional context to the above paragraph, this all happens in an
+                                <em>Abstract Syntax Tree</em> (AST) (really a graph, as some nodes might relate to more
+                                than one parent). The parser makes the AST with the help of the scanner, then
+                                the compiler will run down the AST to analyze what it has, and finally it runs down the
+                                AST again to perform codegen; codegen is where the actual code that the computer will
+                                understand, such as assembly, is output.
+                            </p>
+                        </li>
+                        <li>
+                            <h2>TCSS 491 - Game Design & Simulation</h2>
+                            <p>University of Washington - Tacoma</p>
+                            <p>Academic Winter Quarter 2026</p>
+                            <p>Textbook: <span style="color:var(--debug)">Textbook</span></p>
+                            <p>
+                                This class was a project-based one—we developed a game over the quarter as a group.
+                                The target was that it was supposed to run in the browser (and hostable on github
+                                pages).
+                            </p>
+                            <p>
+                                Our group created a game that blended Sekiro combat mechanics with that of a two-dimensional
+                                fighter. The part I was most proud of in this was the creation of a (partial) 3D renderer
+                                that rendered a 3D world on to a 2D screen (with some limitations). See the
+                                <a href="#Projects">projects</a> section for more information.
+                            </p>
+                        </li>
+                        <li>
+                            <h2>TCSS 440 - Formal Design</h2>
+                            <p>University of Washington - Tacoma</p>
+                            <p>Academic Spring Quarter 2026</p>
+                            <p>Textbook: <span style="color:var(--debug)">Textbook</span></p>
+                            <p>
+                                <!-- TODO: rewrite this after completing TCSS 440 -->
+                                This class is mentioned by a professor to be more accurately described as
+                                <em>formal languages</em>.
+                            </p>
+                            <p>
+                                This class is still in progress, so I can't expand on it fully, but do ask if you're
+                                curious.
+                            </p>
+                        </li>
+                        <li>
+                            <h2>MGMT 450 - ???</h2>
+                            <p>University of Washington - Tacoma</p>
+                            <p>Academic Spring Quarter 2026</p>
+                            <p>Textbook: <span style="color:var(--debug)">Textbook</span></p>
+                            <p>
+                                <!-- TODO: rewrite this afte rcompleting MGMT 450 -->
+                                This class teaches how to make effective teams. It is a business class and is
+                                intended for management majors, but I took it as one of my electives as a computer
+                                scientist.
+                            </p>
+                            <p>
+                                This class is still in progress, so I can't expand on it fully, but do ask if you're
+                                curious.
+                            </p>
+                        </li>
+                        <li>
+                            <h2>Classical Latin</h2>
+                            <p>University of Washington - Tacoma</p>
+                            <p>Academic Spring Quarter of 2026</p> <!-- TODO: this might end up needing to change -->
+                            <p>Textbook: <span style="color:var(--debug)">Textbook</span></p>
+                            <p>
+                                This was an additional endeavor of a friend of mine and I on top of university coursework.
+                                The book mentions is a book written in Latin, for learning Latin. It was devised to
+                                teach Latin in the natural method. In addition to this book, there were also additional
+                                materials we found that aided us in learning Latin written by the same author as an
+                                accompaniment to the aforementioned book.
+                            </p>
+                            <p>
+                                <!-- TODO: rewrite this after finishing Spring 2026, or the next milestone,
+                                        whichever comes first -->
+                                I had read part of the book in the past, a fair amount of chapters, then struggled
+                                to read further and didn't have the time to continue reading. It wasn't until I had
+                                lent my friend the book and they started reading it over the spring break right
+                                before the start of the spring quarter. He ended up opening "pandora's box" and we
+                                started to read along together throughout the quarter. Given that the quarter is still
+                                in-progress, you should ask me more about this if you are curious.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="content vertical-banner">
+                    <h1>Work Experience</h1>
+                    <p>
+                        Working is important, not only do you assist in achieving a bigger objective, but also
+                        you earn money to live in a monetary world.
+                    </p>
+                    <!-- TODO: when was it that I worked? -->
+                    <ul>
+                        <li>
+                            <h2>AFL Hyperscale</h2>
+                            <p>Summer 2021, Summer 2022</p>
+                            <p>Administration Assistant, Intern</p>
+                            <p>
+                                <span style="color:var(--debug)" class="lorem-ipsum"></span>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="content vertical-banner">
+                    <h1>Projects</h1>
+                    <p>
+                        Here I would like to list some personal projects and a few academic projects worth
+                        mentioning.
+                    </p>
+                    <ul>
+                        <li>
+                            <h2>Split Keyboard</h2>
+                            <p>Started in Summer of 2024</p>
+                            <p>
+                                <span style="color:var(--debug)">
+                                    <span class="lorem-ipsum">text</span>
+                                </span>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="content vertical-banner">
+                    <h1>Extra</h1>
+                    <p>
+                        This section is dedicated to expand on some other things that don't necessarily fit in other
+                        sections.
+                    </p>
+                    <p>
+                        <span style="color: var(--debug)" class="lorem-ipsum"></span>
+                    </p>
                 </div>
         </div>
-        <div class="main sidebar">
+        <div class="sidebar">
 
         </div>
     </div>
