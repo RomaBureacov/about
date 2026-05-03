@@ -62,23 +62,36 @@
                         aim to be a graduate student. There is so much to learn in the world of how we make use
                         of computation ability that it would be a shame to skip past it all.
                     </p>
-                    <h2>Strengths and Weaknesses</h2>
+                    <h2>Strengths</h2>
                     <p>
                         I can offer a strength in having a keen eye. Drawing from my experience in Physics
                         and Chemistry in college, I have developed the want to be more analytical as to what
                         I am doing.
                     </p>
                     <p>
-                        Another strength is that of reading; what I mean is that I <em>want</em> to learn. Spending so
+                        Another strength is that of being critical; if I'm given something to peer-review, I make sure
+                        to find at least something that I can point out for improvement, otherwise I believe it's
+                        not a very good peer-review.
+                    </p>
+                    <p>
+                        Finally, I possess strength is that of reading; what I mean is that I <em>want</em> to learn. Spending so
                         much time at school has shown me that just about all I want to do is be curious and learn
                         from the world, to observe and study.
                     </p>
+                    <h2>Weaknesses</h2>
                     <p>
-                        On the side of weaknesses, I can share that I feel like I hol an odd fear of <em>starting</em> projects.
+                        On the side of weaknesses, I can share that I hold an odd fear of <em>starting</em> projects,
+                        of making strong commitments.
                         The difference from this to procrastination is that I don't postpone personal project, I
-                        more-so feel like there is something more I could do before I start or I simply feel like I
-                        lack certain resources. I've observed myself holding the belief that I don't have the time
-                        when part of it is I don't give myself the time.
+                        more-so feel like there is something more I could do before I even <em>start</em>.
+                    </p>
+                    <p>
+                        I've also observed myself holding the belief that I don't have the time
+                        when part of it is I don't give myself the time. I can be fixated on specific things such that
+                        I end up not delegating attention to other things—a good example is that of Latin, I've wanted
+                        to learn Latin, but ended up stuck and hadn't continued. The main reason I have continued
+                        is primarily because I ended up having a study partner such that we could both
+                        motivate each other to continue learning Latin.
                     </p>
                     <h2>Artificial Intelligence (or Large Language Models)</h2>
                     <p>
@@ -109,7 +122,11 @@
                     <p>
                         There are a few things to mention on academic experience. One obvious aspect is that I am in
                         the program for Bachelors of Science in Computer Science, but I also wanted to dedicate a section
-                        to few other parts of my academic experience that might be of interest.
+                        to few other parts of my academic experience that might be of interest. The purpose of this
+                        section is to better-shape what I did when I studied computer science, given that computer
+                        science itself is <em>very</em> broad. Given that some courses are required by the degree,
+                        those said courses will be omitted as they don't provide any additional perspective on my
+                        academic journey.
                     </p>
                     <ul>
                         <li>
@@ -126,7 +143,11 @@
                             <h2>TCSS 421 - Compiler Construction</h2>
                             <p>University of Washington - Tacoma</p>
                             <p>Academic Fall Quarter 2025</p>
-                            <p>Textbook: <span style="color:var(--debug)">Textbook</span></p>
+                            <p>
+                                Textbook:
+                                <cite>Introduction to Compiler Construction in a Java World</cite>
+                                (ISBN-13: 978-1439860885)
+                            </p>
                             <p>
                                 This class was about the process of making a compiler. We used an already mostly
                                 constructed compiler to learn about the details of a compiler. The compiler was
@@ -134,7 +155,8 @@
                                 targeting the Java virtual machine.
                             </p>
                             <p>
-                                Here I learned what a grammar was, and that compilation occurs in three distinct
+                                Here we got some practice on using a grammar, and learned that compilation occurs
+                                in three distinct
                                 stages: parsing, analyze, codegen; the parser of the compiler makes use of a
                                 scanner, whose job is to read the input, character by character, and recognize
                                 tokens. The parser asks the scanner for tokens and interprets the tokens based
@@ -148,14 +170,17 @@
                                 than one parent). The parser makes the AST with the help of the scanner, then
                                 the compiler will run down the AST to analyze what it has, and finally it runs down the
                                 AST again to perform codegen; codegen is where the actual code that the computer will
-                                understand, such as assembly, is output.
+                                understand, such as assembly or some intermediate representation, is output.
                             </p>
                         </li>
                         <li>
                             <h2>TCSS 491 - Game Design & Simulation</h2>
                             <p>University of Washington - Tacoma</p>
                             <p>Academic Winter Quarter 2026</p>
-                            <p>Textbook: <span style="color:var(--debug)">Textbook</span></p>
+                            <p>
+                                Textbook:
+                                none
+                            </p>
                             <p>
                                 This class was a project-based one—we developed a game over the quarter as a group.
                                 The target was that it was supposed to run in the browser (and hostable on github
@@ -165,6 +190,8 @@
                                 Our group created a game that blended Sekiro combat mechanics with that of a two-dimensional
                                 fighter. The part I was most proud of in this was the creation of a (partial) 3D renderer
                                 that rendered a 3D world on to a 2D screen (with some limitations). See the
+                                <!-- such hrefs to headers are generated by the helper script -->
+                                <!--suppress HtmlUnknownAnchorTarget -->
                                 <a href="#Projects">projects</a> section for more information.
                             </p>
                         </li>
@@ -172,54 +199,141 @@
                             <h2>TCSS 440 - Formal Design</h2>
                             <p>University of Washington - Tacoma</p>
                             <p>Academic Spring Quarter 2026</p>
-                            <p>Textbook: <span style="color:var(--debug)">Textbook</span></p>
+                            <p>
+                                Textbook:
+                                <cite>Introduction to the Theory of Computation</cite>
+                                (ISBN-13: 978-1133187790)
+                            </p>
                             <p>
                                 <!-- TODO: rewrite this after completing TCSS 440 -->
                                 This class is mentioned by a professor to be more accurately described as
-                                <em>formal languages</em>.
+                                <i>theory of computing</i> (and in fact, that is what the textbook is about).
                             </p>
                             <p>
+                                Here we learned about deterministic and non-deterministic finite state automata,
+                                proving that both can be turned into the other and thus they define the same
+                                set of languages (the regular languages). Then we expanded that idea to regular
+                                expressions and proved that regular expressions "generate" the same languages as
+                                the finite automata by creating a finite autamaton from a regular expression and
+                                deriving a regular expression from a finite automaton.
+                            </p>
+                            <p>
+                                <em>
                                 This class is still in progress, so I can't expand on it fully, but do ask if you're
                                 curious.
+                                </em>
                             </p>
                         </li>
                         <li>
-                            <h2>MGMT 450 - ???</h2>
+                            <h2>MGMT 450 - Managing Work Teams</h2>
                             <p>University of Washington - Tacoma</p>
                             <p>Academic Spring Quarter 2026</p>
-                            <p>Textbook: <span style="color:var(--debug)">Textbook</span></p>
+                            <p>Textbooks:</p>
+                            <ul>
+                                <li><cite>Teams That Work: The Seven Drivers of Team Effectiveness</cite> (ISBN-13: 978-0197764596)</li>
+                                <li><cite>Dream Teams: Working Together Without Falling Apart</cite> (ISBN-13: 978-0735217799)</li>
+                            </ul>
                             <p>
-                                <!-- TODO: rewrite this afte rcompleting MGMT 450 -->
+                                <!-- TODO: rewrite this after completing MGMT 450 -->
                                 This class teaches how to make effective teams. It is a business class and is
                                 intended for management majors, but I took it as one of my electives as a computer
                                 scientist.
                             </p>
+                            <p>Some of my favorite parts from this course:</p>
+                            <ul>
+                                <li>
+                                    Google did a study on what made effective teams, and they discovered that
+                                    one of the biggest factors (also mentioned in <cite>Teams That Work</cite>) was
+                                    <a href="https://www.google.com/search?q=google+psychological+safety+study">
+                                        <em>Psychological Safety</em>
+                                    </a>, which can be defined as the perception that if you as a team member will
+                                    speak up to provide a dissenting opinion or input, you believe you will <em>not</em>
+                                    be ostracized, reprimanded, or judged.
+                                </li>
+                                <li>
+                                    Hiring more "stars" doesn't scale: more stars for highly interdependent teams
+                                    can actually lead to less effective teams.
+                                </li>
+                                <li>
+                                    Emotional contagion is this idea that one person can infect other people with
+                                    their emotions. This is most significant in the aspect that "workplace rudeness
+                                    can spread" (<cite>Teams That Work</cite>).
+                                </li>
+                                <li>
+                                    When is comes to how familiar team members are with each other:
+                                    how familiar they are with each other professionally (such as skills) is more important
+                                    than how familiar they are with each other personally (such as life outside of work).
+                                </li>
+                                <li>
+                                    There is a good quote from <cite>Teams That Work</cite>:
+                                    <cite>
+                                        you cannot "control" [trust], you can only "influence" it... You can't make
+                                        someone trust you, but you can act in a manner that increases the likelihood
+                                        that they will
+                                    </cite>
+                                    <br>
+                                    In addition, there was the idea of trust:
+                                    <cite>
+                                        Trust is a business imperative.
+                                    </cite>
+                                    The important thing to note here is that trust and psychological safety are
+                                    two sides of the same coin, trust is about you trusting the other person, and
+                                    psychological safety is about you believing that the others trust you.
+                                </li>
+                                <li>
+                                    Team debriefs are shown to improve team efficiency: the reason being that it
+                                    provides the means for team members to reflect and learn from what they did
+                                    or did not do. If you manage a team, <em>consider team debriefs!</em>
+                                </li>
+                                <li>
+                                    Another good quote from <cite>Teams That Work</cite>:
+                                    <cite>
+                                        Purpose and identity can help a team succeed.
+                                    </cite>
+                                    <br>
+                                    One factor that helps a team's working conditions is being able to understand
+                                    what their purpose actually is. If members do not understand, then your team
+                                    may itself work inefficiently as they don't know what they're actually supposed
+                                    to do.
+                                </li>
+                            </ul>
                             <p>
+                                <em>
                                 This class is still in progress, so I can't expand on it fully, but do ask if you're
                                 curious.
+                                </em>
                             </p>
                         </li>
                         <li>
                             <h2>Classical Latin</h2>
                             <p>University of Washington - Tacoma</p>
                             <p>Academic Spring Quarter of 2026</p> <!-- TODO: this might end up needing to change -->
-                            <p>Textbook: <span style="color:var(--debug)">Textbook</span></p>
+                            <p>Textbooks:</p>
+                            <ul>
+                                <li><cite>Lingua Latina per se Illustrata, Pars I: Familia Romana</cite> (ISBN-13: 978-1585104239)</li>
+                                <li><cite>Lingua Latina per se Illustrata: Latine Disco, Student's Manual</cite> (ISBN-13: 978-1585100507)</li>
+                            </ul>
                             <p>
                                 This was an additional endeavor of a friend of mine and I on top of university coursework.
-                                The book mentions is a book written in Latin, for learning Latin. It was devised to
+                                The first book mentioned above is a book written in Latin, for learning Latin—it was made to
                                 teach Latin in the natural method. In addition to this book, there were also additional
                                 materials we found that aided us in learning Latin written by the same author as an
-                                accompaniment to the aforementioned book.
+                                accompaniment to the aforementioned book (the student's manual).
                             </p>
                             <p>
                                 <!-- TODO: rewrite this after finishing Spring 2026, or the next milestone,
-                                        whichever comes first -->
-                                I had read part of the book in the past, a fair amount of chapters, then struggled
-                                to read further and didn't have the time to continue reading. It wasn't until I had
-                                lent my friend the book and they started reading it over the spring break right
+                                        whichever comes first  -->
+                                I had read part of the book in the past (the first 6 chapters) and then struggled
+                                to read further and didn't give myself the time to continue reading. It wasn't until I had
+                                lent my friend the book: he started reading it over the spring break of 2026, right
                                 before the start of the spring quarter. He ended up opening "pandora's box" and we
-                                started to read along together throughout the quarter. Given that the quarter is still
-                                in-progress, you should ask me more about this if you are curious.
+                                started to read along together throughout the quarter.
+                            </p>
+                            <p>
+                                <em>
+                                    This reading is still in progress, so I can't expand on it fully, but do ask if you're
+                                    curious.
+                                </em>
                             </p>
                         </li>
                     </ul>
