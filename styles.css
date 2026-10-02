@@ -46,7 +46,7 @@ h1 > a {
     margin-bottom: 5%;
     margin-left: 2%;
     margin-right: 2%;
-    padding: 2% 2%;
+    padding: 3% 5%;
 
     border-style: ridge ridge solid ridge ;
     border-color: var(--gold-foreground);
